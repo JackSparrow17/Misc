@@ -1,0 +1,246 @@
+.Wrapper{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Caption-Text{
+    width: 97%;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.Header-Text{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    color: var(--Dark);
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+/*
+=======
+Callout
+=======
+*/
+
+.Callout{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Callout 
+.Brand 
+.Image{
+    width: 200px;
+    padding; 20px;
+    border: 1px solid red;
+}
+
+.Callout .Brand .Image, 
+.Callout .Brand .Name, 
+.Download-Brochure, 
+.What-Now .Step .Icon,
+.What-Now .Apply-Now{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*
+===============
+Header-Section
+==============
+*/
+.Header-Section{
+    width: 100%;
+}
+
+.Header-Section 
+.Header-Text{
+    background-color: var(--Dark);
+    width: 100%;
+    min-height: 20vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.Header-Image{
+    width: 100%;
+}
+
+.Header-Image 
+img{
+    max-width: 100%;
+}
+
+/*
+==========
+What To Do
+==========
+*/
+.What-Now{
+    width: 100%;
+}
+
+.What-Now
+.Step{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.What-Now 
+.Step 
+span{
+    padding: 10px;
+    margin: 0 5px 0px 0px;
+}
+
+.What-Now 
+.Step 
+span 
+img{
+    max-width: 90%;
+}
+
+.What-Now 
+.Step 
+.Icon{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 4px solid gray;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+.What-Now .Step span a, 
+.What-Now .Step span a:active, 
+.What-Now .Step span a:visited{
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--Primary);
+}
+
+.Apply-Now{
+    min-height: 30vh;
+    margin: 0 auto;
+    width: 97%;
+    border-top: 1px solid gray;
+}
+
+.Apply-Now a, 
+.Apply-Now a:active, 
+.Apply-Now a:visited{
+    text-decoration: none;
+    color: white;
+    padding: 15px 90px;
+    background-color: var(--Dark);
+    transition: 0.3s ease-out;
+    font-size: 1.1rem;
+}
+
+.Apply-Now a:hover{
+    text-decoration: none;
+    color: var(--Dark);
+    border: 2px solid var(--Dark);
+    background-color: white;
+    transition: 0.3s ease-in;
+}
+
+/*
+=================
+Programme Details
+=================
+*/
+.Programme-Details{
+    width: 100%;
+}
+
+.Programme-Details 
+.Row-Custom{
+    display: grid;
+    align-items: center;
+}
+
+.Programme-Details 
+.Row-Custom
+.Col-Custom{
+    background-color: var(--Primary);
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/*
+=================
+Download-Brochure
+=================
+*/
+
+.Download-Brochure{
+    width: 100%;
+    padding: 5px;
+    min-height: 20vh;
+    position: fixed;
+    top: 78%;
+    left: 0;
+    background-color: var(--Primary);
+}
+
+.Download-Brochure a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--Dark);
+    padding: 10px 20px;
+}
+
+
+/*
+===========================================================================================
+===========================================================================================
+MEDIA QUERIES / MEDIA QUERIES / MEDIA QUERIES / MEDIA QUERIES / MEDIA QUERIES / MEDIA QUERIES 
+===========================================================================================
+===========================================================================================
+*/
+
+/* TABLETS AND DESKTOPS */
+@media screen and (min-width: 720px){
+    
+/*
+=================
+Programme Details
+=================
+*/
+
+.Programme-Details 
+.Row-Custom{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Programme-Details 
+.Row-Custom
+.Col-Custom:nth-child(2){
+    border-right: solid white;
+    border-left: solid white;
+}
+
+}

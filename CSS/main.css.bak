@@ -1,0 +1,24 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    font-size: 16px;
+    font-family: tahoma;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/*
+=========
+Variables
+=========
+*/
+
+:root{
+    /*Colours*/
+    --Primary: #fc5c9c;
+    --Dark: #2b2b2b;
+}
